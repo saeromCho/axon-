@@ -26,10 +26,12 @@ repositories {
 dependencies {
     implementation 'org.axonframework:axon-spring-boot-starter:4.5.3'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-//    implementation 'org.axonframework:axon-bom:4.5.3'
-
+    // implementation 'org.axonframework:axon-bom:4.5.3'
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.2.6.RELEASE'
+//    java:org.hibernate:hibernate-core
+    runtimeOnly 'com.h2database:h2'
+
     // https://mvnrepository.com/artifact/com.h2database/h2
     testImplementation 'com.h2database:h2:1.4.200'
 
